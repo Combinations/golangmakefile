@@ -13,6 +13,9 @@ ${BINARY}:
 install: 
 	go install ${LDFLAGS} -o ${BINARY} .
 
+test:
+	go test
+
 clean: 
 	if [ -f ${BINARY} ] ; then rm ${BINARY} ; fi
 
